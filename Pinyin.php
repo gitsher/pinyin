@@ -146,7 +146,11 @@ class Pinyin_Pinyin {
             }
         } else {
             if (($isInitial === true)) {
-                $result = reset($arrInitialPinyin);
+                if($arrInitialPinyin){
+                    $result = reset($arrInitialPinyin);
+                } else {
+                    $result = reset($$arrPrevInitialPinyin);
+                }
             } else {
                 $result = reset($arrFullPinyin);
             }
