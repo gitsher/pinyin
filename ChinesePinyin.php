@@ -1,16 +1,16 @@
 <?php
 /**
- * @name Pinyin_ChinesePinyinTable
- * @desc 汉字拼音对照表
+ * @name Pinyin_ChinesePinyin
+ * @desc 汉字拼音对照表（汉字20901个）更新词表url[]
  * @author 张顺(zhangshun@baidu.com)
  */
-class Pinyin_ChinesePinyinTable {
+class Pinyin_ChinesePinyin {
     /**
-     * chinese pinyin correspondence table (amount:20901)
+     * 汉字对应拼音二维数组
      * @var array
      * @access public
      */
-    public static $arrChinesePinyinTable = array(
+    public static $chinesePinyin = array(
         '丂' => array(
             'kao',
             'qiao',
