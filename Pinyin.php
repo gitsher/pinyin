@@ -12,7 +12,7 @@ class Pinyin_Pinyin {
      * @param string $string
      * @return array
      **/
-    private function splitString($string) {
+    private static function splitString($string) {
         $result = array();
 
         $len = mb_strlen($string);
@@ -30,7 +30,7 @@ class Pinyin_Pinyin {
      * @param array $stringList
      * @return array
      **/
-    private function changePinyinList($stringList) {
+    private static function changePinyinList($stringList) {
         $result = array();
 
         if (!is_array($stringList)) {
